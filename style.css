@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
-*{font-family: 'Bree Serif', serif;}
+*{font-family: 'Bree Serif', serif;
+background-color:#ffcc00;}
 
 .navbar {
-overflow: hidden;
-;
+
 font-family: Arial;
 display: flex;
 justify-content:space-between;
@@ -11,9 +11,9 @@ justify-content:space-between;
 
 /* Links inside the navbar */
 .navbar a {
-float: left;
+/* float: left; */
 font-size: 16px;
-color:green;
+color:black;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
@@ -22,32 +22,45 @@ transition: 1s;
 
 /* The dropdown container */
 .dropdown {
-float: left;
-overflow: hidden;
-transition: 1s;}
+/* float: left; */
+/* overflow: hidden; */
+transition: 1s;
+position: relative;
+}
+
+
 /* Dropdown button */
-.dropdown .dropbtn {
+ .dropbtn {display: flex;
+    justify-content: center;
+    align-items: center;
 font-size: 16px;
-border: none;
+box-sizing: border-box;
+width: 70px;
+height: 30px;
+
+border: 2px solid black;
 outline: none;
-color: green;
-padding: 14px 16px;
+color: black;
+box-shadow:5px 5px grey;
+border-radius: 15px;
+
 background-color: inherit;
-font-family: inherit; /* Important for vertical align on mobile phones */
-margin: 0; /* Important for vertical align on mobile phones */
+font-family: inherit; 
 transition: 1s;
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
-background-color: red
-;font-size: larger;
+.navbar a:hover, .dropdown:hover .dropbtn:hover {
+background-color:floralwhite;
+font-size: larger;
 font-weight: bold;
+box-shadow: 0px 0px grey;
 }
 
 /* Dropdown content (hidden by default) */
 .dropdown-content {
 display: none;
+left: -30px;
 position: absolute;
 background-color: #f9f9f9;
 min-width: 160px;
@@ -60,27 +73,48 @@ z-index: 1;
 float: none;
 color: black;
 padding: 12px 16px;
-text-decoration: none;
 display: block;
 text-align: left;
 transition: 1s;
 }
 
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-background-color: #ddd;
-}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
 display: block;
 }
-.welcome-text{display: flex;
-align-content:left;
+
+.homebtn{display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box 5px;
+box-sizing: border-box;
+width: 70px;
+height: 30px;
+padding: 25px;  
+border: 2px solid black;
+box-shadow:5px 5px grey;
+border-radius: 15px;
+
+}
+
+
+
+.welcome-text{
+    font-size: 100px;
+            
+}
+.welcome-text1{
+    font-size: 50px;
+    
+}
+.welcome-text2{
+    font-size: 50px;
+    
 }
 .welcome-background {color:white;
-background-color: burlywood;}
-.social-box {background-color: black;
+}
+.social-box {
 padding: 20px;
 
 display: flex;
@@ -95,3 +129,71 @@ min-height: 100vh;
 main {
 flex: 1 0 auto;
 }
+.animated-text {
+    position: relative;
+    left: 0px;
+    animation-name: my-text-animation;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition-timing-function: linear; 
+    }
+    @keyframes my-text-animation { 
+        from{left:0px;
+        color:#f9f9f9;
+    }
+    to {
+        left:100px;
+    color:black;
+    
+    font-weight:bold;
+    
+    }
+    }
+    .animated-text1 {
+        position: relative;
+        left: 0px;
+        animation-name: my-text-animation;
+        animation-duration: 1.5s;
+        animation-fill-mode: forwards;
+        transition-timing-function: linear; 
+        }
+        @keyframes my-text-animation { 
+            from{left:0px;
+            color:#f9f9f9}
+        to {
+            left:100px;
+        color:black;
+        
+        font-weight:bold;
+        
+        }
+        }
+    .animated-text2 {
+            position: relative;
+            left: 0px;
+            animation-name: my-text-animation;
+            animation-duration: 2s;
+            animation-fill-mode: forwards;
+            transition-timing-function: linear; 
+            }
+            @keyframes my-text-animation { 
+                from{left:0px;
+                color:#f9f9f9}
+            to {
+                left:100px;
+            color:black;
+            
+            font-weight:bold;
+            
+            }
+            }
+
+    .socialIcon {
+        margin: 30px 30px 0 30px;
+        width: 70px;
+        height: auto;
+    transition: 1s;}
+    .socialIcon:hover{
+        transform: scale(1.5); }
+    
+                                    
