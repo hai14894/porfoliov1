@@ -32,7 +32,9 @@ When you hover over the posts the colours will appear.
 <img src="pictures/Image2.jpg">
 
 <h1> Site map
+
 <img src="pictures/website flowchart.png">
+
 <h1>Tech stack
 <h3>HTML is used for the content of all webpages
 <h3>CSS is used for the styling and positioning of elements.
